@@ -1,8 +1,8 @@
 import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
 import {RxDotFilled} from "react-icons/rx";
 import {useState} from "react";
-import rtx from "../images/rtx.jpg";
-import mouse from "../images/mouse.jpg";
+import rtx from "../../../resources/images/rtx.jpg";
+import mouse from "../../../resources/images/mouse.jpg";
 import {CarouselChild} from "./CarouselChild.tsx";
 
 export interface Product {

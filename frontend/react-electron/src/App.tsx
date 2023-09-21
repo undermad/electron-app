@@ -1,17 +1,15 @@
 import './index.css'
-import {Navbar} from "./ui/Navbar/Navbar.tsx";
-import {ExploreTopProducts} from "./ui/hompage/ExploreTopProducts.tsx";
-import {Carousel} from "./ui/carousel/Carousel.tsx";
-import {Hero} from "./ui/hero/Hero.tsx";
+import {HomePage} from "./ui/hompage/HomePage.tsx";
+import {Navbar} from "./ui/navbar/Navbar.tsx";
+import {Footer} from "./ui/navbar/Footer.tsx";
 
 function App() {
 
     return (
         <div>
             <Navbar/>
-            <ExploreTopProducts/>
-            <Carousel/>
-            <Hero/>
+            <HomePage/>
+            <Footer/>
         </div>
     )
 }

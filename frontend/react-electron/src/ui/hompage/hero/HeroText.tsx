@@ -5,7 +5,7 @@ export const HeroText: React.FC<{
 }> = (props) =>{
 
     return (
-        <div className={"basis-1/2 max-w-[1000px] h-[600px] flex flex-col items-center justify-center px-10"}>
+        <div className={"basis-1/2 max-w-[1000px] h-[600px] flex flex-col justify-center px-10"}>
             {props.children}
         </div>
     )

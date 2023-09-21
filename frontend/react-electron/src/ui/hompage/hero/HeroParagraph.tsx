@@ -5,6 +5,6 @@ export const HeroParagraph: React.FC<{
 }> = (props) =>{
 
     return (
-        <h2 className={"text-xl"}>{props.children}</h2>
+        <p className={"text-xl mb-5 leading-snug"}>{props.children}</p>
     )
 }

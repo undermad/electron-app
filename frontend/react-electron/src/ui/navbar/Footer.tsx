@@ -1,0 +1,17 @@
+export const Footer = () => {
+    return (
+        <nav className={"flex gap-3 bg-sky-600 items-center p-3 text-sky-50"}>
+            <div className={"ml-4"}>
+                <a href={"#"}>
+                    <span className={"text-xl tracking-widest p-2"}>Electron</span>
+                </a>
+            </div>
+            <div className={"flex gap-3 ml-auto mr-4"}>
+                <a className={"p-2"} href={"#"}>Home</a>
+                <a className={"p-2"} href={"#"}>Search</a>
+            </div>
+
+
+        </nav>
+    )
+}

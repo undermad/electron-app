@@ -1,6 +1,6 @@
-import keyboard from "../images/keyboard.jpg";
+import keyboard from "../../../resources/images/keyboard.jpg";
 
-export const ExploreTopProducts = () => {
+export const Welcome = () => {
     return (
         <div className={"overflow-hidden text-sky-50 relative"}>
             <div
