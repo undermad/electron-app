@@ -17,31 +17,25 @@ import java.util.Objects;
 @Entity
 @Table(name = "book", schema = "reactlibrarydatabase")
 public class Book {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
     private Long id;
-    @Basic
     @Column(name = "title")
     private String title;
-    @Basic
     @Column(name = "author")
     private String author;
-    @Basic
     @Column(name = "description")
     private String description;
-    @Basic
     @Column(name = "copies")
     private Integer copies;
-    @Basic
     @Column(name = "copies_available")
     private Integer copiesAvailable;
-    @Basic
     @Column(name = "category")
     private String category;
-    @Basic
     @Column(name = "img")
-    private byte[] img;
+    private String img;
 
     @Override
     public boolean equals(Object o) {
@@ -58,7 +52,7 @@ public class Book {
         if (!Objects.equals(copiesAvailable, that.copiesAvailable))
             return false;
         if (!Objects.equals(category, that.category)) return false;
-        return Arrays.equals(img, that.img);
+        return !Objects.equals(img, that.img);
     }
 
     @Override
@@ -70,7 +64,7 @@ public class Book {
         result = 31 * result + (copies != null ? copies.hashCode() : 0);
         result = 31 * result + (copiesAvailable != null ? copiesAvailable.hashCode() : 0);
         result = 31 * result + (category != null ? category.hashCode() : 0);
-        result = 31 * result + Arrays.hashCode(img);
+        result = 31 * result + (img != null ? img.hashCode() : 0);
         return result;
     }
 }
