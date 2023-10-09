@@ -14,7 +14,7 @@ export interface Product {
 export const Carousel = () => {
     const [books, setBooks] = useState<BookModel[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [httpError, setHttpError] = useState(null);
+    const [httpError, setHttpError] = useState<string | null>(null);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const dotsIndexes: number[] = [0, 3, 6]
 
@@ -48,7 +48,7 @@ export const Carousel = () => {
 
         }
 
-        fetchBooks().catch((error: any) => {
+        fetchBooks().catch((error: Error) => {
             setIsLoading(false);
             setHttpError(error.message);
         })

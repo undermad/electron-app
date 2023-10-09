@@ -4,7 +4,7 @@ import {HeroImage} from "./HeroImage.tsx";
 import {HeroText} from "./HeroText.tsx";
 import {HeroHeader} from "./HeroHeader.tsx";
 import {HeroParagraph} from "./HeroParagraph.tsx";
-import {LoginButton} from "../buttons/LoginButton.tsx";
+import {Button} from "../buttons/Button.tsx";
 
 
 export const Hero = () => {
@@ -20,7 +20,7 @@ export const Hero = () => {
                         center emissions in check and offers a sustainable path to a healthier
                         planet.
                     </HeroParagraph>
-                    <LoginButton>Sing Up</LoginButton>
+                    <Button>Sing Up</Button>
                 </HeroText>
             </div>
 

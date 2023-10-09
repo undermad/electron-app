@@ -1,6 +1,6 @@
 import {HeroText} from "../hero/HeroText.tsx";
 import messageImage from "../../../resources/images/message.jpg";
-import {LoginButton} from "../buttons/LoginButton.tsx";
+import {Button} from "../buttons/Button.tsx";
 
 export const MessageService = () => {
 
@@ -17,7 +17,7 @@ export const MessageService = () => {
                         If you can not find what you looking for just send us message!
                         Our dedicated team will answer you shortly!
                     </p>
-                    <LoginButton>Sign up</LoginButton>
+                    <Button>Sign up</Button>
                 </HeroText>
             </div>
 

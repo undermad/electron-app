@@ -1,4 +1,4 @@
-export const LoginButton: React.FC<{
+export const Button: React.FC<{
     children: React.ReactNode,
 }> = (props) => {
 
